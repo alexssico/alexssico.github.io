@@ -1,4 +1,7 @@
+
+
 $(document).ready(function (){
+
 	$("#scene").parallax({
 		// calibrateX: false,
 		// calibrateY: true,
@@ -14,5 +17,6 @@ $(document).ready(function (){
 		// originY: 1.0
 	});
 
-	$('#fullpage').fullpage();
+	
+
 });

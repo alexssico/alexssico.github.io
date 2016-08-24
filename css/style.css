@@ -2662,7 +2662,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 #skils .scene .html {
-  left: calc(50% - 250px) !important;
+  left: calc(40% - 250px) !important;
   top: 100px !important;
 }
 
