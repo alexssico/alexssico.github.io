@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My personal page</title>
     <link href="css/style.css" rel="stylesheet">
+    <!-- <link href="css/jquery.fullPage.css" type="text/css" rel="stylesheet"> -->
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -15,9 +17,10 @@
     <![endif]-->
   </head>
   <body>
-    <header>
-      <div class="container">
-         <nav class="navbar navbar-default">
+    <div id="fullpage">
+    <section id="header" class="section" data-anchor="header">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-menu" aria-expanded="false">
               <span class="icon-bar"></span>
@@ -28,15 +31,38 @@
 
            <div class="collapse navbar-collapse" id="header-menu">
             <ul class="nav navbar-nav">
-              <li><a href="#">Link</a></li>
+              <li><a data-menuanchor="header" href="#header">home</a></li>
+              <li><a data-menuanchor="skils" href="#skils">skils</a></li>
+              <li><a href="#portfolio">portfolio</a></li>
+              <li><a href="#contact">contact</a></li>
             </ul>        
           </div>
+         </div>
         </nav> 
-      </div>
-
-    </header>
+    </section>
    
+   <section id="skils" class="section" data-anchor="skils">
+     <div class="bg"></div>
+     <div class="container">
+     <ul id="scene" class="scene">
+      <li class="layer html" data-depth="0.00"><img src="img/html.png"></li>
+      <li class="layer css" data-depth="0.20"><img src="img/css.png"></li>
+      <li class="layer js" data-depth="0.20"><img src="img/js.png"></li>
+      <li class="layer jquery" data-depth="0.60"><img src="img/jquery.png"></li>
+      <li class="layer php" data-depth="0.80"><img src="img/php.png"></li>
+      <li class="layer sass" data-depth="1.00"><img src="img/sass.png"></li>
+      <li class="layer less" data-depth="1.50"><img src="img/less.png"></li>
+      <li class="layer git" data-depth="2.00"><img src="img/git.png"></li>
+</ul>
+     </div>
+   </section>
+ </div> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery.parallax.min.js"></script>
+    <script src="js/jquery.easings.min.js"></script>
+    <script src="js/scrolloverflow.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
   </body>
 </html>

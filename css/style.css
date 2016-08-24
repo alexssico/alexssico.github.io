@@ -400,6 +400,14 @@ body {
   background: #000;
 }
 
+a {
+  text-decoration: none;
+}
+
+.section {
+  height: 100vh;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -2624,4 +2632,93 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .navbar-header:after,
 .navbar-collapse:after {
   clear: both;
+}
+
+#header .navbar {
+  border-radius: 0px;
+}
+
+#header .navbar-default {
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+}
+
+#header .navbar-default .navbar-nav a {
+  color: white;
+  text-transform: uppercase;
+}
+
+#header .navbar-default .navbar-nav a:hover {
+  color: #ccc;
+}
+
+#skils .bg {
+  position: absolute;
+  background: #000 url("/img/bg-header.jpg") no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  height: 100vh;
+  width: 100%;
+}
+
+#skils .scene .html {
+  left: calc(50% - 250px) !important;
+  top: 100px !important;
+}
+
+#skils .scene .css {
+  left: 10% !important;
+  top: 120px !important;
+}
+
+#skils .scene .js {
+  left: 70% !important;
+  top: 120px !important;
+}
+
+#skils .scene .sass {
+  left: 10% !important;
+  top: 100px !important;
+}
+
+#skils .scene .sass img {
+  width: 120px;
+}
+
+#skils .scene .php {
+  left: 30% !important;
+  top: 500px !important;
+  z-index: -1;
+}
+
+#skils .scene .php img {
+  width: 200px;
+}
+
+#skils .scene .jquery {
+  left: 60% !important;
+  top: 500px !important;
+  z-index: -1;
+}
+
+#skils .scene .jquery img {
+  width: 200px;
+}
+
+#skils .scene .git {
+  left: 60% !important;
+  top: 50px !important;
+}
+
+#skils .scene .git img {
+  width: 200px;
+}
+
+#skils .scene .less {
+  left: 20% !important;
+  top: 50px !important;
+}
+
+#skils .scene .less img {
+  width: 150px;
 }

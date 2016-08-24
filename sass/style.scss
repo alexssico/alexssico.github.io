@@ -2,4 +2,107 @@
 @import 'common';
 @import 'responsive_grid';
 @import 'menu';
+
+#header{
+	.navbar{
+		border-radius: 0px;
+
+	}
+
+	.navbar-default{
+		background: rgba(0, 0 , 0 , 0.7);
+		border: none;
+
+		.navbar-nav{
+			a{
+				color: white;
+				text-transform: uppercase;
+
+				&:hover {
+					color: #ccc;
+				}
+			}
+
+		}
+	}
+
+}
+
+#skils{
+	
+	
+	.bg{
+		position: absolute;
+		background: #000 url('/img/bg-header.jpg') no-repeat;
+		background-size: cover;
+		opacity: 0.3;
+		height: 100vh;
+		width: 100%;
+	}
+	
+
+	.scene{
+		.html{
+			left: calc(50% - 250px) !important;
+			top: 100px !important;
+		}
+		
+		.css{
+			left: 10% !important;
+			top: 120px !important;
+		}
+		.js{
+			left: 70% !important;
+			top: 120px !important;
+		}
+
+		.sass{
+			left: 10% !important;
+			top: 100px !important;
+			
+			img{
+				width: 120px;
+			}
+		}
+		.php{
+			left: 30% !important;
+			top: 500px !important;
+			z-index: -1;
+			
+			img{
+				width: 200px;
+			}
+		}
+		
+		.jquery{
+			left: 60% !important;
+			top: 500px !important;
+			z-index: -1;
+			
+			img{
+				width: 200px;
+			}
+		}
+
+		.git{
+			left: 60% !important;
+			top: 50px !important;
+			
+			img{
+				width: 200px;
+			}
+		}
+		.less{
+			left: 20% !important;
+			top: 50px !important;
+			
+			img{
+				width: 150px;
+			}
+		}
+
+	}
+
+}
+
  
