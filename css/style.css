@@ -2652,73 +2652,55 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #ccc;
 }
 
-#skils .bg {
-  position: absolute;
-  background: #000 url("/img/bg-header.jpg") no-repeat;
-  background-size: cover;
-  opacity: 0.3;
+#header .videobox {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#header .videobox .about {
+  overflow: hidden;
   height: 100vh;
+  background: #fff;
+  color: #000;
+}
+
+#header .videobox .about p {
+  font-weight: bold;
+  text-align: center;
+  line-height: 25px;
+}
+
+#header .videobox .about h2 {
+  padding: 5px 10px;
+  background: #ccc;
+  color: #fff;
+  font-weight: normal;
+  text-shadow: 1px 2px 2px #000;
+}
+
+#header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+#header .project {
+  overflow: scroll;
+  background: #ccc;
+}
+
+#header .project img {
   width: 100%;
-}
-
-#skils .scene .html {
-  left: calc(40% - 250px) !important;
-  top: 100px !important;
-}
-
-#skils .scene .css {
-  left: 10% !important;
-  top: 120px !important;
-}
-
-#skils .scene .js {
-  left: 70% !important;
-  top: 120px !important;
-}
-
-#skils .scene .sass {
-  left: 10% !important;
-  top: 100px !important;
-}
-
-#skils .scene .sass img {
-  width: 120px;
-}
-
-#skils .scene .php {
-  left: 30% !important;
-  top: 500px !important;
-  z-index: -1;
-}
-
-#skils .scene .php img {
-  width: 200px;
-}
-
-#skils .scene .jquery {
-  left: 60% !important;
-  top: 500px !important;
-  z-index: -1;
-}
-
-#skils .scene .jquery img {
-  width: 200px;
-}
-
-#skils .scene .git {
-  left: 60% !important;
-  top: 50px !important;
-}
-
-#skils .scene .git img {
-  width: 200px;
-}
-
-#skils .scene .less {
-  left: 20% !important;
-  top: 50px !important;
-}
-
-#skils .scene .less img {
-  width: 150px;
 }
