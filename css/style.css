@@ -2634,22 +2634,21 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   clear: both;
 }
 
-#header .navbar {
-  border-radius: 0px;
+#header .skills li {
+  float: left;
+  width: 50%;
+  line-height: 1.2em;
 }
 
-#header .navbar-default {
-  background: rgba(0, 0, 0, 0.7);
-  border: none;
+#header .contact li {
+  position: relative;
+  line-height: 30px;
+  padding-left: 30px;
 }
 
-#header .navbar-default .navbar-nav a {
-  color: white;
-  text-transform: uppercase;
-}
-
-#header .navbar-default .navbar-nav a:hover {
-  color: #ccc;
+#header .contact .fa {
+  position: absolute;
+  margin-left: -30px;
 }
 
 #header .videobox {
@@ -2697,10 +2696,36 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 #header .project {
-  overflow: scroll;
-  background: #ccc;
+  overflow: hidden;
+  height: 100vh;
+}
+
+#header .project .item {
+  max-height: 250px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#header .project .item h2 {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 0px;
+  border-radius: 10px 10px 0 0;
+  display: none;
+}
+
+#header .project .item:hover img {
+  transform: scale(1.5);
 }
 
 #header .project img {
   width: 100%;
+  border: 1px solid #ccc;
+  transition: transform 1s;
+}
+
+#header .scene li {
+  margin-top: calc(50% - 100px);
+  margin-left: calc(50% - 100px);
 }
