@@ -2662,11 +2662,24 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   background: rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 991px) {
+  #header .videobox {
+    overflow: auto;
+  }
+}
+
 #header .videobox .about {
   overflow: hidden;
   height: 100vh;
   background: #fff;
   color: #000;
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  #header .videobox .about {
+    height: auto;
+  }
 }
 
 #header .videobox .about p {
@@ -2683,6 +2696,17 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   text-shadow: 1px 2px 2px #000;
 }
 
+#header .videobox .about .img {
+  margin-bottom: 410px;
+}
+
+#header .videobox .about img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  height: 400px;
+}
+
 #header video {
   position: absolute;
   top: 50%;
@@ -2695,9 +2719,21 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   z-index: -1;
 }
 
+@media (max-width: 991px) {
+  #header video {
+    display: none;
+  }
+}
+
 #header .project {
   overflow: hidden;
   height: 100vh;
+}
+
+@media (max-width: 991px) {
+  #header .project {
+    height: auto;
+  }
 }
 
 #header .project .item {
@@ -2705,6 +2741,19 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   overflow: hidden;
   margin-bottom: 20px;
   cursor: pointer;
+  position: relative;
+}
+
+#header .project .item .hide {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0 20px 0;
+  background: #000;
+  display: none;
+  z-index: 99;
+  color: #fff;
 }
 
 #header .project .item h2 {
@@ -2717,15 +2766,27 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 
 #header .project .item:hover img {
   transform: scale(1.5);
+  opacity: 0.4;
+}
+
+#header .project .item:hover .hide {
+  display: block;
 }
 
 #header .project img {
   width: 100%;
+  opacity: 1;
   border: 1px solid #ccc;
-  transition: transform 1s;
+  transition: transform 1s, opacity 1s;
 }
 
 #header .scene li {
   margin-top: calc(50% - 100px);
   margin-left: calc(50% - 100px);
+}
+
+@media (max-width: 991px) {
+  #header .scene {
+    display: none;
+  }
 }
